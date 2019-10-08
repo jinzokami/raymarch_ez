@@ -1,9 +1,9 @@
+MIN_DEPTH = 0
+MAX_DEPTH = 1000
+EPSILON = 0.0001
+
 Vector = require("Vector")
 require("SDF")
-
-local MIN_DEPTH = 0
-local MAX_DEPTH = 1000
-local EPSILON = 0.0001
 
 function love.load()
     --make a grid of points the size of the image
@@ -74,5 +74,5 @@ function shortest_distance(eye, direction, rstart, rend)
 end
 
 function sdf_scene(ray)
-    return torus(ray, Vector:new(10, 10, 0))
+    return torus(ray, Vector:new(100, 10, 0))
 end
