@@ -5,8 +5,8 @@ function Vector:new(x, y, z)
     local self = setmetatable({}, Vector)
 
     self.x = (x or 0)
-    self.y = (y or 0)
-    self.z = (z or 0)
+    self.y = (y or x)
+    self.z = (z or x)
 
     return self
 end
